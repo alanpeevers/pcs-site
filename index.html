@@ -145,6 +145,10 @@ section.band > .wrap{padding-block:80px}
 .cta-band p{opacity:.85;margin-top:10px;max-width:34em}
 .cta-band .btn{background:var(--accent-ink);color:var(--accent)}
 .cta-band .btn:hover{opacity:.92}
+.cta-band .contact{margin-top:14px;opacity:1;font-size:.98rem}
+.cta-band .contact a{color:var(--accent-ink);font-weight:600;text-underline-offset:3px}
+.patents-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px;padding:24px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.patents-row p{color:var(--muted);max-width:40em}
 
 footer .wrap{padding-block:36px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;color:var(--muted);font-size:.9rem}
 footer a{color:var(--ink)}
@@ -313,11 +317,28 @@ footer a{color:var(--ink)}
     </div>
   </section> 
 
+  <section class="band" id="patents">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Patents</p>
+          <h2>Patents and inventions</h2>
+        </div>
+        <p>Patents from my engineering career, listed on Google Patents.</p>
+      </div>
+      <div class="patents-row">
+        <p>See every patent that names me as an inventor.</p>
+        <a class="btn primary small" href="https://patents.google.com/?inventor=Alan+Peevers" target="_blank" rel="noopener">View my patents</a>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-band">
     <div class="wrap">
       <div>
         <h2>Have an energy or climate decision in front of you?</h2>
         <p>Book a 30-minute advice session for $75 and get an engineer's view before you commit.</p>
+        <p class="contact">Prefer to message first? Find me on <a href="https://www.linkedin.com/in/igenerateideas/" target="_blank" rel="noopener">LinkedIn</a>, or call <a href="tel:+18318184441">(831) 818-4441</a>.</p>
       </div>
       <a class="btn" href="https://www.linkedin.com/in/igenerateideas/" target="_blank" rel="noopener">Book an advice session</a>
     </div>
@@ -327,7 +348,7 @@ footer a{color:var(--ink)}
 <footer>
   <div class="wrap">
     <span>© 2026 Peevers Consulting Services · Santa Cruz, CA · peeversconsulting.com</span>
-    <span>Connect on <a href="https://www.linkedin.com/in/igenerateideas/" target="_blank" rel="noopener">LinkedIn</a></span>
+    <span>Connect on <a href="https://www.linkedin.com/in/igenerateideas/" target="_blank" rel="noopener">LinkedIn</a> · <a href="tel:+18318184441">(831) 818-4441</a></span>
   </div>
 </footer>
 </body>
