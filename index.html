@@ -120,6 +120,9 @@ section.band > .wrap{padding-block:80px}
 .fact{padding:16px 16px 16px 0;border-bottom:1px solid var(--line);min-width:0}
 .fact dt{font-family:var(--mono);font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
 .fact dd{margin:4px 0 0;font-weight:500}
+.fact dd ul{margin:0;padding-left:1.1em}
+.fact dd li{margin:2px 0}
+.fact dd li::marker{color:var(--accent)}
 @media (max-width:820px){.about{grid-template-columns:1fr;gap:32px}.photo,.headshot{max-width:240px}}
 @media (max-width:520px){.facts{grid-template-columns:1fr}}
 
@@ -268,7 +271,7 @@ footer a{color:var(--ink)}
           <p>I'm an electrical engineer who now works on climate and sustainability. I studied at MIT and UC Berkeley and spent years building embedded systems and software, so I'm comfortable going from a high-level strategy down to the circuit board and the code.</p>
           <p>My focus is renewable and distributed energy, and the problem of balancing a grid that runs on more and more variable sources. I also serve on the board of a nonprofit that helps communities engage with climate action, and I co-founded Green City Mayor, a browser-based climate literacy game for middle and high school students.</p>
           <dl class="facts">
-            <div class="fact"><dt>Education</dt><dd>BSEE, MIT · MSEE, UC Berkeley Terra.Do Climate School</dd></div>
+            <div class="fact"><dt>Education</dt><dd><ul><li>BSEE, MIT</li><li>MSEE, UC Berkeley</li><li><a href="https://www.terra.do/climate-fellowship-learning-for-action/" target="_blank" rel="noopener">Terra.Do Climate School</a></li></ul></dd></div>
             <div class="fact"><dt>Engineering</dt><dd>Embedded systems. Software Development. Architecture. Digital Signal Processing.</dd></div>
             <div class="fact"><dt>Focus</dt><dd>Distributed energy. Grid technology. IP creation.</dd></div>
             <div class="fact"><dt>Based in</dt><dd>Santa Cruz, California</dd></div>
