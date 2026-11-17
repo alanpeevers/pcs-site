@@ -49,6 +49,9 @@ header.top{position:sticky;top:env(safe-area-inset-top, 0px);z-index:5;backgroun
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:700;font-size:1.02rem;min-width:0}
 .brand svg,.brand img{flex:none}
 .brand span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand .brand-text{display:flex;flex-direction:column;justify-content:center;min-width:0;line-height:1.2}
+.brand .brand-tag{font-family:var(--body);font-style:italic;font-weight:400;font-size:12px;color:var(--muted);margin-top:2px}
+@media (max-width:560px){.brand .brand-tag{display:none}}
 .top nav{display:flex;gap:22px;align-items:center}
 .top nav a.link{color:var(--muted);text-decoration:none;font-size:.95rem}
 .top nav a.link:hover{color:var(--ink)}
@@ -159,7 +162,7 @@ footer a{color:var(--ink)}
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Peevers Consulting Services, back to top">
       <img src="logo_v3.png" width="45" height="45" alt="">
-      <span>Peevers Consulting Services</span>
+      <span class="brand-text"><span>Peevers Consulting Services</span><span class="brand-tag">we solve hard problems and love our planet</span></span>
     </a>
     <nav aria-label="Main">
       <a class="link" href="#services">Services</a>
